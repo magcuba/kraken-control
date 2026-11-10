@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Kraken Control
+GenericName=NZXT liquid cooler controls
+Comment=PC monitoring, cooling curves and a theme editor for NZXT Kraken Z
+Exec=/usr/local/bin/kraken-control
+TryExec=/usr/local/bin/kraken-control
+Icon=kraken-control
+Terminal=false
+Categories=Settings;HardwareSettings;
+Keywords=NZXT;Kraken;CPU;GPU;temperature;cooling;
+StartupNotify=true

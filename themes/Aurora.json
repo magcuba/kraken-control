@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "name": "Aurora",
+  "background": "#08110e",
+  "background_image": "",
+  "elements": [
+    {
+      "kind": "ring",
+      "source": "ram",
+      "x": 160,
+      "y": 160,
+      "radius": 148,
+      "width": 10,
+      "color": "#46e3a7",
+      "visible": true
+    },
+    {
+      "kind": "ring",
+      "source": "cpu_load",
+      "x": 160,
+      "y": 160,
+      "radius": 132,
+      "width": 10,
+      "color": "#f3b95f",
+      "visible": true
+    },
+    {
+      "kind": "text",
+      "source": "clock",
+      "x": 160,
+      "y": 100,
+      "size": 43,
+      "color": "#ffffff",
+      "title": "",
+      "visible": true
+    },
+    {
+      "kind": "text",
+      "source": "cpu",
+      "x": 160,
+      "y": 161,
+      "size": 29,
+      "color": "#46e3a7",
+      "title": "CPU",
+      "visible": true
+    },
+    {
+      "kind": "text",
+      "source": "gpu",
+      "x": 160,
+      "y": 202,
+      "size": 26,
+      "color": "#f3b95f",
+      "title": "GPU",
+      "visible": true
+    },
+    {
+      "kind": "text",
+      "source": "ram",
+      "x": 160,
+      "y": 246,
+      "size": 18,
+      "color": "#b5d4c6",
+      "title": "RAM",
+      "visible": true
+    }
+  ]
+}

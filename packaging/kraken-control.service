@@ -1,0 +1,17 @@
+[Unit]
+Description=Kraken Control LCD updater
+After=systemd-udev-trigger.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+ExecStartPre=/usr/bin/liquidctl --match "NZXT Kraken Z" initialize
+ExecStartPre=/usr/bin/liquidctl --match "NZXT Kraken Z" set lcd screen orientation 180
+ExecStart=/usr/bin/python3 -I /usr/local/lib/kraken-control/cpu_display.py
+Restart=on-failure
+RestartSec=10
+TimeoutStartSec=90
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

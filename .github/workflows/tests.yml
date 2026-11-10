@@ -1,0 +1,19 @@
+name: Tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install desktop dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-gi gir1.2-gtk-3.0 python3-cairo python3-pil python3-psutil fonts-noto-core desktop-file-utils
+      - name: Test without hardware
+        run: |
+          /usr/bin/python3 -m unittest discover -v
+          /usr/bin/python3 -m py_compile app.py backend.py cpu_display.py dashboard.py monitor.py theme_editor.py theme_renderer.py
+          bash -n install.sh uninstall.sh
+          desktop-file-validate packaging/io.github.magcuba.KrakenControl.desktop

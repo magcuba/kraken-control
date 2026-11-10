@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "name": "Minimal",
+  "background": "#080e18",
+  "background_image": "",
+  "elements": [
+    {
+      "kind": "ring",
+      "source": "cpu_load",
+      "x": 160,
+      "y": 160,
+      "radius": 146,
+      "width": 10,
+      "color": "#61dafb",
+      "visible": true
+    },
+    {
+      "kind": "text",
+      "source": "text",
+      "x": 160,
+      "y": 90,
+      "size": 27,
+      "color": "#ffffff",
+      "title": "CPU",
+      "visible": true
+    },
+    {
+      "kind": "text",
+      "source": "cpu",
+      "x": 160,
+      "y": 157,
+      "size": 65,
+      "color": "#61dafb",
+      "title": "",
+      "visible": true
+    },
+    {
+      "kind": "text",
+      "source": "liquid",
+      "x": 160,
+      "y": 219,
+      "size": 19,
+      "color": "#aab6ca",
+      "title": "LÍQUIDO",
+      "visible": true
+    },
+    {
+      "kind": "text",
+      "source": "clock",
+      "x": 160,
+      "y": 254,
+      "size": 15,
+      "color": "#ffffff",
+      "title": "",
+      "visible": true
+    }
+  ]
+}

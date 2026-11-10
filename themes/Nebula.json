@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "name": "Nebula",
+  "background": "#07090f",
+  "background_image": "",
+  "elements": [
+    {
+      "kind": "ring",
+      "source": "cpu_load",
+      "x": 160,
+      "y": 160,
+      "radius": 148,
+      "width": 10,
+      "color": "#b35cff",
+      "visible": true
+    },
+    {
+      "kind": "ring",
+      "source": "gpu_load",
+      "x": 160,
+      "y": 160,
+      "radius": 132,
+      "width": 10,
+      "color": "#42d5ed",
+      "visible": true
+    },
+    {
+      "kind": "text",
+      "source": "clock",
+      "x": 160,
+      "y": 102,
+      "size": 44,
+      "color": "#ffffff",
+      "title": "",
+      "visible": true
+    },
+    {
+      "kind": "text",
+      "source": "text",
+      "x": 160,
+      "y": 139,
+      "size": 12,
+      "color": "#bca9d5",
+      "title": "KRAKEN CONTROL",
+      "visible": true
+    },
+    {
+      "kind": "text",
+      "source": "cpu",
+      "x": 160,
+      "y": 179,
+      "size": 32,
+      "color": "#ffffff",
+      "title": "CPU",
+      "visible": true
+    },
+    {
+      "kind": "text",
+      "source": "gpu",
+      "x": 160,
+      "y": 217,
+      "size": 27,
+      "color": "#55d4e7",
+      "title": "GPU",
+      "visible": true
+    },
+    {
+      "kind": "text",
+      "source": "liquid",
+      "x": 160,
+      "y": 252,
+      "size": 15,
+      "color": "#bca9d5",
+      "title": "LÍQUIDO",
+      "visible": true
+    }
+  ]
+}
